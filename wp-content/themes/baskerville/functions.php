@@ -304,7 +304,7 @@ if ( ! function_exists( 'baskerville_custom_excerpt_length' ) ) {
 if ( ! function_exists( 'baskerville_new_excerpt_more' ) ) {
 
 	function baskerville_new_excerpt_more( $more ) {
-		return '... <a class="more-link" href="'. get_permalink( get_the_ID() ) . '">' . __( 'Continue Reading', 'baskerville' ) . ' &rarr;</a>';
+		return '... <a class="more-link" href="'. get_permalink( get_the_ID() ) . '">' . __( 'Leia o post', 'baskerville' ) . '</a>';
 	}
 	add_filter( 'excerpt_more', 'baskerville_new_excerpt_more' );
 
@@ -322,7 +322,7 @@ if ( ! function_exists( 'baskerville_meta' ) ) {
 
 		<div class="post-meta">
 		
-			<a class="post-date" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_time( 'Y/m/d' ); ?></a>
+			<a class="post-date" href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>"><?php the_time( 'd/m/Y' ); ?></a>
 			
 			<?php
 			

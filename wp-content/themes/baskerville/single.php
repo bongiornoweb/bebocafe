@@ -238,14 +238,14 @@
 								$prev_post = get_previous_post();
 								if ( ! empty( $prev_post )): ?>
 								
-									<a class="post-nav-prev" title="<?php printf( __( 'Previous post: %s', 'baskerville' ), get_the_title( $prev_post->ID ) ); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>"><?php _e( 'Previous post', 'baskerville' ); ?></a>
+									<a class="post-nav-prev" title="<?php printf( __( 'Post anterior: %s', 'baskerville' ), get_the_title( $prev_post->ID ) ); ?>" href="<?php echo get_permalink( $prev_post->ID ); ?>"><?php _e( 'Post anterior', 'baskerville' ); ?></a>
 							
 								<?php endif; 
 
 								$next_post = get_next_post();
 								if ( ! empty( $next_post ) ) : ?>
 									
-									<a class="post-nav-next" title="<?php printf( __( 'Next post: %s', 'baskerville' ), get_the_title( $next_post->ID ) ); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>"><?php _e( 'Next post', 'baskerville' ); ?></a>
+									<a class="post-nav-next" title="<?php printf( __( 'Próximo post: %s', 'baskerville' ), get_the_title( $next_post->ID ) ); ?>" href="<?php echo get_permalink( $next_post->ID ); ?>"><?php _e( 'Próximo post', 'baskerville' ); ?></a>
 							
 								<?php endif; ?>
 								
